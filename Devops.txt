@@ -1,0 +1,41 @@
+Old School--> code devopment and Build
+1. Integration is tricky & painful.
+2.Fixing issues at end of iterations not immediately.
+3.Intermediate merge issues can hold up other teams.
+4.Functional bugs can't be identified and fixed.
+5. Long iterations.
+Earlier seperate people working on merging and compiling, building and to generate packages.
+
+Continuous integration: (Build pipeline)
+- Devopers they know the code better --> code checkout multiple times--> that triggers automatic 
+builds. These builds are on Build servers.
+These involves in 5 stages -->
+Integrate, compile, Package, automated unit tests, automated UI tests(Firefox,chrome, e etc.)
+Master(git)--> Compile-->Package--> Automated unit tests --> Automated UI tests.(this is a pipeline
+At a time in we can have 4 or 5 builds parllely in a pipeline. 
+Ex--> Bod code at compiles face, John code at automation of unit test cases.
+If build fail--> mail to developers--> immediate fix.
+So thats why code base stable at all times.
+-Integration automated and quick, issues can find and fix early, small iterations.
+
+Old School - code Delivery :
+- After build success--> Software package and instructions--> of how to deploy code in 
+different environments.
+Intstructions--> copy files from pkg--> download and install pkg on OS--> setup envi variables.
+envi, db, url etc. depends on environment.
+They delpoy into test envi--> testing team tests. AFter app stable--> they deploy into production.
+-Instructions may be wrong, humon error in deployments, test cases are comples and alot, etc.
+-Lot of downtime of app, and effort.
+
+Continuation Delivery: ( Release pipeline)
+-Instruction are automated--> how many os server instances, what kind of envi, install s/w
+-Automating the test cases in test environment- to setup test envi etc.
+
+Continuos deployment :
+- Big enterprises--> deploy one region after stable--> deploy in other regions--> go like this
+if not stable--> they rollback. and use previos producions. 
+
+The automated scripts--> for configuaration, infrastructure, automation test cases are on 
+one centralized location.
+SO the dev and operations team work closely--> devops culture.
+Operations guys have knowledge of scripting, Devlopers knows about the operation complexities.
