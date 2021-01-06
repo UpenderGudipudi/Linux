@@ -1,0 +1,67 @@
+[root@ip-172-31-1-87 ec2-user]# history
+    1  useradd pavan
+    2  useradd upendra
+    3  useradd ramya
+    4  useradd sneha
+    5  cat /etc/passwd
+    6  head /etc/passwd
+    7  tail /etc/passwd
+    8  more /etc/passwd
+    9  less /etc/passwd
+   10  vi srividhya
+   11  cat srividhya
+   12  cat > one
+   13  ls
+   14  vi one
+   15  cat one
+   16  vi srividhya
+   17  cat srividhya
+   18  vi srividhya
+   19  cat srividhya
+   20  vi one
+   21  cat one
+   22  cat one
+   23  ls
+   24  mkdir sachin yuvi raina dhoni
+   25  ls
+   26  touch {a..k}
+   27  ls
+   28  ls -l
+   29  ls -l | grep h
+   30  ls -l | grep one
+   31  ls -l | grep sachin
+   32  ls -l | grep dhoni
+   33  ls -l | grep ONE
+   34  ls -l | grep -i ONE
+   35  cat /etc/passwd | grep ramya
+   36  cat /etc/passwd | grep sneha
+   37  find / -name h
+   38  find / -name raina
+   39  find / -name c
+   40  find / -name yuvi
+   41  find / -user pavan
+   42  find / -user sneha
+   43  ls -l
+   44  ls -l
+   45  touch upendra123
+   46  ls -l
+   47  mkdir sekahr
+   48  ls -l
+   49  chmod u=r,g=wx,o=rw f
+   50  ls -l
+   51  chmod 543 b
+   52  ls -l
+   53  ls -l
+   54  chmod 700 h
+   55  ls -l
+   56  chmod 070 i
+   57  ls -l
+   58  chmod 007 j
+   59  ls -l
+   60  chmod 777 sachin
+   61  ls -l
+   62  umask
+   63  history
+[root@ip-172-31-1-87 ec2-user]#
+[root@ip-172-31-1-87 ec2-user]#
+[root@ip-172-31-1-87 ec2-user]#

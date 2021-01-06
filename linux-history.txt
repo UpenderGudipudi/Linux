@@ -1,0 +1,81 @@
+[root@ip-172-31-13-98 ec2-user]# history
+    1  yum install -y httpd
+    2  service httpd status
+    3  service httpd start
+    4  service httpd status
+    5  cd /var/www/html
+    6  ls
+    7  vi index.html
+    8  cat index.html
+    9  cd /home/ec2-user/
+   10  pwd
+   11  cat > pavan
+   12  ls
+   13  ls -l
+   14  mkdir sachin
+   15  ls
+   16  ls -l
+   17  cat pavan
+   18  cat >> pavan
+   19  cat pavan
+   20  touch abc
+   21  ls
+   22  touch {1..9}
+   23  ls
+   24  cat pavan > abc
+   25  cat abc
+   26  cp abc sachin/
+   27  ls
+   28  cd sachin/
+   29  pwd
+   30  ls
+   31  cat abc
+   32  cd ..
+   33  ls
+   34  mv pavan sachin/
+   35  ls
+   36  cd sachin/
+   37  ls
+   38  cd ..
+   39  pwd
+   40  ls
+   41  mv abc def
+   42  ls
+   43  cat def
+   44  rm -rf 9
+   45  ls
+   46  cd sachin/
+   47  pwd
+   48  mkdir yuvi
+   49  ls
+   50  cd yuvi/
+   51  pwd
+   52  mkdir rahul
+   53  cd rahul/
+   54  pwd
+   55  mkdir lara
+   56  ls
+   57  cd lara/
+   58  pwd
+   59  cd ..
+   60  pwd
+   61  cd ..
+   62  cd ..
+   63  cd ..
+   64  pwd
+   65  mkdir -p sachin/yuvi/rahul/lara/ponting
+   66  cd sachin/yuvi/rahul/lara/ponting
+   67  pwd
+   68  cd ../../../../../
+   69  pwd
+   70  ls
+   71  mkdir dhoni
+   72  ls
+   73  mv dhoni/ sushanth
+   74  ls
+   75  rm -rf sushanth/
+   76  ls
+   77  history
+[root@ip-172-31-13-98 ec2-user]#
+[root@ip-172-31-13-98 ec2-user]#
+[root@ip-172-31-13-98 ec2-user]#

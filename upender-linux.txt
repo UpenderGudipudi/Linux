@@ -1,0 +1,764 @@
+How to create AWS account ???
+
+email address , mobile number , Debit card ( master / visa )
+
+Google ===>> aws console login ==>> AWs management console ===>> sign into console ==>>> create new account ==>> email : xyz , password 1243 , conform password : 1234 ==>> Aws account name : ==>>  continue..
+
+AWS free-tier ( select ) ===>> personal ( select ) or proffesional ===>>> address details ==> d.no , streect , pincode , state.
+
+==>>> debit card details ==>> 16 digits number ==>> CVV ===>>> OTP ( 2/-) ===>>> do you have pancrad : no ===>>
+
+AWS ==> verification ==>> mobile number ===>> 4 digits ( 5896 ) 
+
+my role is : student
+
+you are intestrd in : other..
+
+AWs console login ==>> sign in ==>> email id with password ===>> 
+
+AWS account ==>> imediate / 24 hours..
+
+
+=========================================================================================================
+
+Linux servers : we will create linux servers in AWS account 
+
+Linux servers to connect ===>> we need to two softwares or applications install in our laptop.
+
+1. gitbash
+
+2. putty
+
+=========================================================================================================================
+
+Linux : it is an operating system like windows..
+
+Linux is process oriented operating system..
+
+
+Datacenter : physical linux servers ===>> hardware ===>> o.s install ( linux ) ===>> application and databse installl ==>> APP ===>> EU.
+
+AWS ==>> Cloud ===>>> AMI ( amazon machine image) ==>> Ec2 instance ==>>> ===>> application and databse installl ==>> APP ===>> EU.
+
+
+Unix : operating system.
+
+Unix 4 types of flavours :
+
+1. sun solaris  2. Redhat Linux ( open source and free of cost ) 3. IBM-AIX  4. HP-UNIX..
+
+Other remaining these three are enterpraise versions ===>> License purhase ===>>>> manadatory..
+
+
+windows :
+
+C:/ : operating install ===>> Admin user.
+
+GUI mode operation ( Graphical user interface) ===>> clicks.
+
+files and folders
+
+NTFS filesystem ( new technology file system)
+
+
+Linux : 
+
+/ ==>>> root ===>>> operation install ===>>> rootuser / parent user / super user / Admin user.
+
+CLI mode operations : ( Command Line interface) ===>>> commands to type.
+
+files and directories
+
+ext2 , ext3 , ext4 ( latest) ==>> file systems.
+
+ext2 ===>> second extended file system.
+
+ext3 ===>> third extended file system.
+
+ext4 ===>> fourth extended file system.
+
+
+=====================================================================================================================================
+
+How to create Linux ec2 instance in AWS account ??
+
+Ec2 ==>> it is virtual server in the cloud.
+
+Ec2 ==>>> elastic cloud compute.
+
+AMI ==>>> Amazon machine image.
+
+AWs containtains default AMi's
+
+AMI contains ===>> the operationg system.
+
+Every AMI has their own identification number ==>> AMI id ..
+
+AMI ==>> 64 bit architecture..
+
+Security group ===>> It is a virtual firewall at ec2 instance level..
+
+it contains set of rules..
+
+Each application has their own port number..
+
+all ports from 0 to 65535
+
+applications ===>> endusers ==>>> access via ipadrress and port number..
+
+default user ===>> ec2-user ==>> ssh ==>> secure shell ==>> 22.
+
+http ==>>> 80
+
+alltraffic ==>> all ( 0 to 65535)
+
+keypair ==>>> name ===>>> upendra ===>> download ==>> extension===>> .pem ===>> upendra.pem ==>> pem file.
+
+pem file ---->>> privatekey. and it acts as passowrd.
+
+after launching the ec2 instance ==>> automatically creates a public key 
+
+pem file ==>>> private key and ec2 instance ==>> public key ==>>> should be match ==>>> ec2-user able to login into the ec2 instance..
+
+when ever you create a ec2 instance ===>> two ipaddresses will come.
+
+1. public ip address ==>> application ===>> giving to enduser and ec2 instance to login.
+
+it is visible in aws console dashboard only..
+
+2. private Ipaddress ===>> internal communication to use.
+
+it is visible in both aws console dashboard and ec2 instance.
+
+==========================================================
+
+how to connect linux ec2instance ??
+
+1. gitbash and 2. putty
+
+===============================================================================
+
+Linux Basic commands :
+
+files and directory operations :
+
+1. file operations :
+
+how to create a file in linux ??
+
+cat > filename 
+
+enter the data 
+
+ctrl + d ==>> save.
+
+how to view data inside a file
+
+cat filename
+
+how to append the data in a file ?
+
+cat >> filename
+
+add some more data 
+
+ctrl + d ==>>> save.
+
+how to view list of files and directories
+
+ls ; ls -l
+
+file ===>>> white color
+
+ls -l ==>> first field ==>> - ( hyphen )
+
+How to create empty file ?
+
+touch filename.
+
+filename ==>> upendra ==>> empty file
+
+existing data in a file ==>> srinivas
+
+How to redirect one file to another file ?
+
+cat file1 > file2
+
+cat srinivas > upendra
+
+How to copy files from one location to another location ?
+
+cp source destination
+
+note : destination must a directory.
+
+how to create a directory ==>>> mkdir directoryname ==>> mkdir sachin
+
+cp upendra sachin
+
+How to move files from one location to another location ?
+
+mv source destination
+
+note : destination must a directory.
+
+mv one sachin
+
+How to reanme a file 
+
+mv oldname newname
+
+mv srinivas yuvi
+
+how to create multiple empty files ??
+
+touch {a..k}
+
+touch {1..10}
+
+How to delete a file ??
+
+rm -rf filename
+
+rm -rf one
+
+=================================================================
+
+directory operations :
+
+how to create a directory ?
+
+mkdir directoryname
+
+mkdir sachin
+
+ls ==>> directory color ==>> blue color.
+
+ls -l ==>> first field ==>> d 
+
+how to go to inside a directory ?
+
+cd ==>> change directory
+
+cd directory name
+
+cd sachin
+
+ls
+
+pwd ===>> present working directory.
+
+/home/ec2-user/sachin
+
+mkdir yuvi
+
+ls
+
+cd yuvi
+
+pwd
+
+/home/ec2-user/sachin/yuvi
+
+mkdir raina
+
+cd raina
+
+pwd
+
+/home/ec2-user/sachin/yuvi/raina
+
+mkdir rahul
+
+cd rahul
+
+pwd
+
+/home/ec2-user/sachin/yuvi/raina/rahul
+
+cd ..
+
+pwd
+
+/home/ec2-user/sachin/yuvi/raina/
+
+cd ..
+
+pwd
+
+/home/ec2-user/sachin/yuvi/
+
+cd ..
+
+pwd
+
+/home/ec2-user/sachin/
+
+cd ..
+
+pwd
+
+/home/ec2-user
+
+mkdir -p /home/ec2-user/sachin/yuvi/raina/rahul/lara
+
+cd /home/ec2-user/sachin/yuvi/raina/rahul/lara
+
+pwd
+
+/home/ec2-user/sachin/yuvi/raina/rahul/lara
+
+cd ../../
+
+pwd
+
+/home/ec2-user/sachin/yuvi/raina
+
+cd ../../../
+
+pwd
+
+/home/ec2-user
+
+cd ../../../../../ ==>> enter 
+
+How to reanme a directory ?
+
+mv oldname newname
+
+mv sachin ponting
+
+how to delete a directory ?
+
+rm -rf sachin
+
+======================================================================================
+
+cd /
+
+ls ; ls -l
+
+file system hirachy to display..
+
+===========================================================================================
+
+filter commnads :
+
+files , users , directories ===>> filter ( top 10 , below 10 , page by page )
+
+linux : users to create ===>> useradd upendra.
+
+user related information ==>>> /etc/passwd
+
+head : top 10 users to display ===>> head  /etc/passwd 
+
+tail : below 10 users to display ===>> tail /etc/passwd
+
+more : page by page ===>> more /etc/passwd ===>> space button ==>> press ==>>> last page ==>> automatically exit..
+
+less : page by page ===>> less /etc/passwd ===>> space button ==>> press ==>>> last page ==>> not exit..==> press q button ==>>> exit.
+
+=========================================================================================
+
+vi editor.
+
+vi editor ==>> files --->> create , existing data ==>>> modify , delete
+
+vi editor has 3 modes.
+
+1. CLI mode.
+
+2. Insert mode.
+
+3. Extended mode.
+
+vi upendra ==>> CLI mode ==> enter press
+
+press "i" key ==>>> insert mode
+
+i am new to vi editor..
+
+esc shift:wq! ==>>>> save ===>> extend mode.
+
+==============================================================================
+
+grep and find :
+
+users , files , diretories.. ==>> grep and find..
+
+grep : 
+
+20 files -->> xyz ==>>> grep 
+
+ls -l | grep xyz
+
+ls -l | grep sachin
+
+cat /etc/passwd | grep ramya
+
+file ==>> abc 
+
+ls -l | grep ABC 
+
+ls -l | grep -i ABC 
+
+i ==>> ignore case sensitive.
+
+=========================
+
+find :
+
+find / -options keyword.
+
+options :
+
+1. files
+
+2. directories
+
+3. users
+
+4. groups
+
+5. inum ( inode number) ==>>> 1234.
+
+
+find / -name xyz
+
+find / -name sachin
+
+find / -user pavan
+
+find / -group devops
+
+fins / -inum 5678
+
+==============================================
+
+files and directory permissions :
+
+ls -l ==>>> first field
+
+- ==>>> file
+
+d ==>>> directory
+
+l ==>> link file
+
+b ==>> block file
+
+c ==>> charecter file.
+
+files and directory permissions ===>> providing security to the files and directories.. ==>> userlevel , grouplevel , otherslevel..
+
+rw- ( userlevel ) r-- ( grouplevel )  r-- ( otherslevel )
+
+r ==> read  ==>> 4
+
+w ==>> write ==>> 2
+
+x ===>. execute ===>> 1
+
+chmod ===>>> change modification.
+
+files and directory permissions ==>> two methods.
+
+1. symbolic method.
+
+2. Absolute method.
+===================================
+
+1. symbolic method.
+
+file ==>>> one 
+
+userlevel ==> 6 grouplevel ==>>> 3 otherslevel 5
+
+chmod u=rw,g=wx,o=rx one
+
+directory ==>> raina
+
+userlevel ==> 4 grouplevel ==>>> 2 otherslevel 7
+
+chmod u=r,g=w,o=rwx raina
+
+2. Absolue method :
+
+chmod 655 yuvi
+
+chmod 457 h
+
+chmod 700 a
+
+chmod 070 b
+
+chmod 007 c
+
+===================================================================
+
+default file permissions : 644
+
+default directory permissions : 755
+
+file full permissions : 666
+
+directory full permissions : 777
+
+umask ==>>> 022 ==>> default file and directory permissions are stored.
+
+666 - 022 ==>>> 644 
+
+777 - 022 ==>> 755.
+
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
